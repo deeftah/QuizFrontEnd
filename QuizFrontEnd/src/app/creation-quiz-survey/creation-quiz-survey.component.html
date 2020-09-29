@@ -2,13 +2,9 @@
     <p>Title:</p>  <input type="text" >
 </div>
 <br>
-<br>
-<br>
 <div>
     <p>Description:</p>  <input type="text" >
 </div>
-<br>
-<br>
 <br>
 
 <div >
@@ -20,8 +16,6 @@
           [bsConfig]="{ dateInputFormat: 'YYYY-MM-DD' }">
 </div>
 <br>
-<br>
-<br>
 <div >
     <p>Expiration Date: <input type="date" 
           class="form-control"
@@ -30,6 +24,9 @@
           formControlName="dateYMD"
           [bsConfig]="{ dateInputFormat: 'YYYY-MM-DD' }"></p>
 </div>
-
-<div><input type="url">
+<br>
+<div><label for="homepage">link:</label>
+    <input type="url" id="homepage" name="homepage">
+    <input type="button" value ="Save">
+    <input type="button" value ="Add Quest">
 </div>
