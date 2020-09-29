@@ -1,1 +1,35 @@
-<p>creation-quiz-survey works!</p>
+<div>
+    <p>Title:</p>  <input type="text" >
+</div>
+<br>
+<br>
+<br>
+<div>
+    <p>Description:</p>  <input type="text" >
+</div>
+<br>
+<br>
+<br>
+
+<div >
+    <p>Creation Date: </p><input type="date" 
+          class="form-control"
+          #datepickerYMD="bsDatepicker"
+          bsDatepicker
+          formControlName="dateYMD"
+          [bsConfig]="{ dateInputFormat: 'YYYY-MM-DD' }">
+</div>
+<br>
+<br>
+<br>
+<div >
+    <p>Expiration Date: <input type="date" 
+          class="form-control"
+          #datepickerYMD="bsDatepicker"
+          bsDatepicker
+          formControlName="dateYMD"
+          [bsConfig]="{ dateInputFormat: 'YYYY-MM-DD' }"></p>
+</div>
+
+<div><input type="url">
+</div>
