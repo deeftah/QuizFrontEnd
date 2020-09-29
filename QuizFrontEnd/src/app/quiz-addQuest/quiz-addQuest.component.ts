@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-quiz-add',
-  templateUrl: './quiz-add.component.html',
-  styleUrls: ['./quiz-add.component.css']
+  selector: 'app-quiz-addQuest',
+  templateUrl: './quiz-addQuest.component.html',
+  styleUrls: ['./quiz-addQuest.component.css']
 })
 export class QuizAddComponent implements OnInit {
 

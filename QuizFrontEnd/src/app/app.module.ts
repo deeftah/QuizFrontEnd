@@ -3,16 +3,18 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { SurveyAddComponent } from './survey-add/survey-add.component';
-import { QuizAddComponent } from './quiz-add/quiz-add.component';
+import { SurveyAddComponent } from './survey-addQuest/survey-addQuest.component';
+import { QuizAddComponent } from './quiz-addQuest/quiz-addQuest.component';
 import { HomePageComponent } from './home-page/home-page.component';
+import { CreationQuizORSurveyComponent } from './creation-quiz-survey/creation-quiz-survey.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SurveyAddComponent,
     QuizAddComponent,
-    HomePageComponent
+    HomePageComponent,
+    CreationQuizORSurveyComponent
   ],
   imports: [
     BrowserModule,
