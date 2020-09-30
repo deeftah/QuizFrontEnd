@@ -1,24 +1,24 @@
 <label for="Option Quest">Type:</label>
 <input list="Opt" id="Optionn Quest" name="Option Quest" />
 
-<datalist id="Opt">
-    <option value="Quiz">
+<datalist id="Opt"><!--select Quiz or Survey-->
+    <option value="Quiz"><!--get pt titlurile din BD(Survey)-->
     <option value="Survey">
 </datalist>
 
 
+<!--get info available titles from DB (Survey) table-->
 <label for="Option Title">Title:</label>
-<input list="OptTitle" id="Option Title" name="Option Title" />
+<input list="OptTitle" id="Option Title" name="Option Title" /><!--get lis of titles from DB-->
 
-<datalist id="OptTitle">
-    <option value="Fizica">
-    <option value="Matematica">
-        <option value="Engleza">
-        <option value="Franceza">>
+
+<datalist id="OptTitle"><!--select title for Quiz or Survey to add or get to/from DB-->
+    <div *ngFor='let item of surveys'>
+    <option value={{item.idSurvey}}.{{item.titlesSurvey}}></div>
 </datalist>
 <br>
 <br>
-<input type="button"  value="Create login">
+<input type="button"  value="Create login"><!--go to page to create new Quiz or Survey if user is admin-->
 <br>
 <br>
-<input type="button"  value="Solve login">
+<input type="button"  value="Solve login"><!--go to page to solve existing Quiz or Survey if user is not  admin-->

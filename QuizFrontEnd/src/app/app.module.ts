@@ -9,6 +9,7 @@ import { QuizAddComponent } from './quiz-addQuest/quiz-addQuest.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { CreationQuizORSurveyComponent } from './creation-quiz-survey/creation-quiz-survey.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { UserResponseComponent } from './user-response/user-response.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     SurveyAddComponent,
     QuizAddComponent,
     HomePageComponent,
-    CreationQuizORSurveyComponent
+    CreationQuizORSurveyComponent,
+    UserResponseComponent
   ],
   imports: [
     BrowserModule,

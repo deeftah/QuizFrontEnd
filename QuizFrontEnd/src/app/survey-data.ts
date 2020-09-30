@@ -1,0 +1,8 @@
+//un data object ce simuleaza quiz DTO
+// numele trebuie sa coincida cu numele din DTO din spring
+export class SurveyData{
+    idSurvey: number;
+    titlesSurvey: string;
+    creationDateSurvey:Date;
+    expirationDateSurvey:Date;
+}

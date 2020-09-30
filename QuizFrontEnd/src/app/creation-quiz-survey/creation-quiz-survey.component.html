@@ -1,9 +1,9 @@
 <div>
-    <p>Title:</p>  <input type="text" >
+    <p>Title:</p>  <input type="text" ><!--set title for Quiz or Survey to add in DB-->
 </div>
 <br>
 <div>
-    <p>Description:</p>  <input type="text" >
+    <p>Description:</p>  <input type="text" ><!--set description for Quiz or Survey to add in DB-->
 </div>
 <br>
 
@@ -13,7 +13,7 @@
           #datepickerYMD="bsDatepicker"
           bsDatepicker
           formControlName="dateYMD"
-          [bsConfig]="{ dateInputFormat: 'YYYY-MM-DD' }">
+          [bsConfig]="{ dateInputFormat: 'YYYY-MM-DD' }"><!--set date creation for Quiz or Survey to add in DB-->
 </div>
 <br>
 <div >
@@ -22,11 +22,11 @@
           #datepickerYMD="bsDatepicker"
           bsDatepicker
           formControlName="dateYMD"
-          [bsConfig]="{ dateInputFormat: 'YYYY-MM-DD' }"></p>
+          [bsConfig]="{ dateInputFormat: 'YYYY-MM-DD' }"></p><!--set date expiration for Quiz or Survey to add in DB-->
 </div>
 <br>
 <div><label for="homepage">link:</label>
-    <input type="url" id="homepage" name="homepage">
-    <input type="button" value ="Save">
-    <input type="button" value ="Add Quest">
+    <input type="url" id="homepage" name="homepage"><!--create unic linkget ID from Quiz or Survey which was created in DB-->
+    <input type="button" value ="Save"><!--add information for Quiz or Survey into the DB-->
+    <input type="button" value ="Add New Quest">
 </div>
