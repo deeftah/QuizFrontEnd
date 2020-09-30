@@ -27,6 +27,6 @@
 <br>
 <div><label for="homepage">link:</label>
     <input type="url" id="homepage" name="homepage"><!--create unic linkget ID from Quiz or Survey which was created in DB-->
-    <input type="button" value ="Save"><!--add information for Quiz or Survey into the DB-->
-    <input type="button" value ="Add New Quest">
+    <button type="button" class="btn"><a [routerLink]="[ '.', 'quiz-addQuest' ]"> Create Quiz</a></button>
+    <button type="button" class="btn"><a [routerLink]="[ '.', 'survey-addQuest' ]"> Create Survey</a></button>
 </div>

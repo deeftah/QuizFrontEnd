@@ -1,8 +1,18 @@
-<label>Type(Eg.:quiz):Title(Eg.:Fizica)</label>
+<label>Type(Eg.:quiz):</label>
+    <br><br><br>
+<!--get info available titles from DB (Survey) table-->
+<label for="Option Title">Title:</label>
+<br>
+<input list="OptTitle" id="Option Title" name="Option Title" /><!--get lis of titles from DB-->
 
-<div>
-    <p>Title:</p>  <input type="text" ><!--get Title by quiz for question from DB-->
-</div>
+<br>
+<datalist id="OptTitle"><!--select title for Quiz or Survey to add or get to/from DB-->
+    <div *ngFor='let item of surveys'>
+    <option value={{item.idSurvey}}.{{item.titlesSurvey}}></div>
+</datalist>
+
+ <!--get Title by quiz for question from DB-->
+
 <br>
 <div>
     <p>Description:</p>  <input type="text" ><!--get description by quiz for question from DB-->
@@ -12,7 +22,4 @@
     <p>Answer:</p>  <input type="text" ><!-- SET ANSWER to java application by user's response and check if correct in Repository querry-->
 </div><br>
 <br><br>
-<input type="button" value="Next Question"><br><!--get Question by quiz from DB-->
-<input type="button" value="updateQuest"><br>
-<input type="button" value="saveQuest"><br>
-<input type="button" value="deleteQuest">
+<input type="button" value="Next Question"><!--get Question by quiz from DB-->
