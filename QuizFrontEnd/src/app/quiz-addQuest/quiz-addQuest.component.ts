@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { QuizData } from '../quiz-data';
+import { QuizService } from '../quiz.service';
 
 @Component({
   selector: 'app-quiz-addQuest',
@@ -11,9 +13,15 @@ import { Component, OnInit } from '@angular/core';
 
 
 export class QuizAddComponent implements OnInit {
-  constructor() { }
+  quizes: QuizData[]=[]
+
+  constructor(private quizService:QuizService) { }
 
   ngOnInit(): void {
+
+    this.quizService.getQuizes().subscribe(receivedQuizes=>{
+      this.quizes=receivedQuizes; 
+    });
   }
 
 }
