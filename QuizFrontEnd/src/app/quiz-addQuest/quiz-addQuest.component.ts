@@ -15,13 +15,14 @@ import { QuizService } from '../quiz.service';
 export class QuizAddComponent implements OnInit {
   quizes: QuizData[]=[]
 
-  constructor(private quizService:QuizService) { }
+  constructor(private quizServive:QuizService) { }
 
   ngOnInit(): void {
 
-    this.quizService.getQuizes().subscribe(receivedQuizes=>{
-      this.quizes=receivedQuizes; 
+    this.quizServive.getQuizes().subscribe(receivedQuizes=>{
+      this.quizes=receivedQuizes;
     });
   }
+  
 
 }

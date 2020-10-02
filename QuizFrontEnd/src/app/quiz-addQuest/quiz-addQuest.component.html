@@ -1,21 +1,38 @@
 <label>Type(quiz):Title(Eg.:Fizica)</label>
 
 <div>
-    <p>Title:</p>  <input type="text" >
+    <p>Contents:</p>  <input type="text" ><!--set content in DB for table question -->
 </div>
 <br>
 <div>
-    <p>Description:</p>  <input type="text" >
-</div>
+    <p>Answer1:</p>  <input type="text" ><!--set content answer in DB for table Answer  -->
+</div><br>
 <br>
 <div>
-    <p>Answer:</p>  <input type="text" >
+    <p>Correct Answer1:</p>  <input type="text" ><!--set if corect or no answer in DB for table Answer  -->
+</div><br>
+<br>
+<div>
+    <p>Answer2:</p>  <input type="text" ><!--set content answer in DB for table Answer  -->
+</div><br>
+<br>
+<div>
+    <p>Correct Answer2:</p>  <input type="text" ><!--set if corect or no answer in DB for table Answer  -->
+</div><br>
+
+<br>
+<div>
+    <p>Answer3:</p>  <input type="text" ><!--set content answer in DB for table Answer  -->
+</div><br>
+<br>
+<div>
+    <p>Correct Answer3:</p>  <input type="text" ><!--set if corect or no answer in DB for table Answer  -->
 </div><br>
 <div>
     <p>Score:</p>  <input type="number" >
 </div>
 <br><br>
-<input type="button" value="addNewQuest"><br>
-<input type="button" value="updateQuest"><br>
-<input type="button" value="saveQuest"><br>
-<input type="button" value="deleteQuest">
+<input type="button" value="addNewQuest"><br><!--call addQuestion from java application-->
+<input type="button" value="updateQuest"><br><!--call updateQuestion from java application-->
+<input type="button" value="saveQuest"><br><!--??? update lista question din Quiz send/set info in the DB answer, question, quiz-->
+<input type="button" value="deleteQuest"><!--call deleteQuestion from java application-->
